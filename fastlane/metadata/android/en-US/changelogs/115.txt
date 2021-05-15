@@ -1,0 +1,3 @@
+1.13.5
+---
+- Emergency fix: Disable the SLP wallet for the time being until an SLP token burning issue can be investigated further.

@@ -1,0 +1,4 @@
+1.12.1
+---
+- SLP token recalculation fixes
+- SLP send fixes with bitcoincashj 0.18

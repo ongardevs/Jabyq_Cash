@@ -1,0 +1,4 @@
+1.11.6
+---
+- Prevent spending of NFT tokens
+- Prevent accidental spending of SLP minting batons

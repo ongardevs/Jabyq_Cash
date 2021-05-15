@@ -1,0 +1,12 @@
+Send coins to a <a href="https://cashaccount.info">Cash Account</a> or Bitcoin Cash address with Crescent Cash.
+
+Simple. Secure. Trustless.
+
+Crescent combines the simplicity of traditional, centralized money apps with the security of trustless Bitcoin wallets.
+
+Crescent Cash is a non-custodial wallet that allows for you to send Bitcoin Cash to other Cash Account users with their username, or to normal Bitcoin Cash addresses.
+
+Spanish translations done by:
+Rosy Martinez
+Andres G (@tiptopcoco)
+Sofia Corona (@VainilaMarket)

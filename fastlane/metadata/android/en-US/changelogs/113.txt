@@ -1,0 +1,6 @@
+1.13.4
+---
+- Utilizing an updated bitcoincashj. Now Crescent is more stable, and fast.
+- BIP47 changes, improvements, and bug fixes.
+- Verify signature using Cash Accounts is now fixed.
+- More systems within the app will use Tor when Tor is enabled and running.

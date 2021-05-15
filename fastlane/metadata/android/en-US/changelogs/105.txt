@@ -1,0 +1,4 @@
+1.12
+---
+- Fixes to bitcoincashj for processing minting batons and SLP genesis UTXOs
+- You can now create SLP tokens in-app!

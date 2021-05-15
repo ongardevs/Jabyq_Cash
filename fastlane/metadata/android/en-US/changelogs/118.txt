@@ -1,0 +1,4 @@
+1.13.8
+---
+- Adds support for BIP70 SLP payments
+- Fixes a few issues with UI when sending SLP/BCH out of SLP wallet

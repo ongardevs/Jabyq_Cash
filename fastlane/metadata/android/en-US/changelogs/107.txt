@@ -1,0 +1,8 @@
+1.13
+---
+- BIP47 Reusable Payment Codes: Transact privately.
+- Cash Account registration and restore bug fixes
+- Bitcoin Cash wallet syncing fixes and improvements
+- Wallet encryption has been removed (for now) so BIP47 can function better
+
+Upon upgrading, the wallet will register new Cash Accounts to utilize BIP47 Payment Codes.

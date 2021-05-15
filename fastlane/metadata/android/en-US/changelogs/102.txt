@@ -1,0 +1,4 @@
+1.11.4
+---
+- BCH portion of the SLP wallet now supports BIP70, CoinText SMS integration, and more.
+- Fixed issue with grabbing phone contact numbers on certain devices
