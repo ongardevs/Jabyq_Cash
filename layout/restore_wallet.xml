@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restore_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/restore_wallet"
+        android:textColor="?attr/textColor"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp">
+
+            <EditText
+                android:id="@+id/handle2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_button"
+                android:backgroundTint="?attr/textboxOnWhite"
+                android:digits="#._qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+                android:hint="@string/cash_account"
+                android:maxLength="150"
+                android:paddingStart="20dp"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textHintOnWhite"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp">
+
+            <EditText
+                android:id="@+id/recoverySeed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_button"
+                android:backgroundTint="?attr/textboxOnWhite"
+                android:digits=" qwertyuiopasdfghjklzxcvbnm"
+                android:hint="@string/recovery_seed"
+                android:paddingStart="20dp"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textHintOnWhite"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="40dp" />
+
+        <Button
+            android:id="@+id/verifyUserBtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bch_wallet_button"
+            android:text="@string/restore"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

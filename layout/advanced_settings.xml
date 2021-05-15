@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingsAdvanced"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/advanced"
+                android:textColor="?attr/textColor"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/keys"
+                    android:textColor="?attr/textColor"
+                    android:textColorHighlight="@color/colorAccentDark"
+                    android:textIsSelectable="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <Button
+                    android:id="@+id/btnShowAddresses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bch_wallet_button"
+                    android:text="@string/view_current_addresses"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/addressesInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/advanced_desc"
+                    android:textColor="?attr/textColor"
+                    android:textColorHighlight="@color/colorAccentDark"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/utxos"
+                    android:textColor="?attr/textColor"
+                    android:textColorHighlight="@color/colorAccentDark"
+                    android:textIsSelectable="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <Button
+                    android:id="@+id/btnShowUtxos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bch_wallet_button"
+                    android:text="@string/view_utxos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/utxos_desc"
+                    android:textColor="?attr/textColor"
+                    android:textColorHighlight="@color/colorAccentDark"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/transactions"
+                    android:textColor="?attr/textColor"
+                    android:textColorHighlight="@color/colorAccentDark"
+                    android:textIsSelectable="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/addOpCodeTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/add_op_return"
+                        android:textColor="?attr/textColor"
+                        android:textIsSelectable="true"
+                        android:textSize="18sp" />
+
+                    <Switch
+                        android:id="@+id/addOpReturnSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:checked="false" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/legacy_desc"
+                        android:textColor="?attr/textColor"
+                        android:textIsSelectable="true"
+                        android:textSize="18sp" />
+
+                    <Switch
+                        android:id="@+id/allowLegacyP2SHSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:checked="false" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/network_node"
+                    android:textColor="?attr/textColor"
+                    android:textColorHighlight="@color/colorAccentDark"
+                    android:textIsSelectable="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/nodeIP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@null"
+                        android:checked="false"
+                        android:digits="1234567890."
+                        android:hint="192.168.1.1"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="?attr/textboxOnWhite"
+                        android:textCursorDrawable="@null"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/requires_app_restart"
+                    android:textColor="?attr/textColor"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/verify_signature"
+                    android:textColor="?attr/textColor"
+                    android:textIsSelectable="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <Button
+                    android:id="@+id/btnShowVerifyScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bch_wallet_button"
+                    android:text="@string/verify_a_signature"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/verifyInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/verify_desc"
+                    android:textColor="?attr/textColor"
+                    android:textColorHighlight="@color/colorAccentDark"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/sweep_wallet"
+                    android:textColor="?attr/textColor"
+                    android:textIsSelectable="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingEnd="30dp">
+
+                    <EditText
+                        android:id="@+id/privKeyText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/circle_button"
+                        android:backgroundTint="?attr/textboxOnWhite"
+                        android:hint="@string/private_key"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:singleLine="true"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="?attr/textHintOnWhite"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.25" />
+
+                    <ImageView
+                        android:id="@+id/btnScanPrivateKey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.125"
+                        android:padding="5dp"
+                        android:tint="?attr/textColor"
+                        app:srcCompat="@drawable/qrcodeicon" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/bip38Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/bip38PrivateKeyPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle_button"
+                            android:backgroundTint="?attr/textboxOnWhite"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textColor"
+                            android:textColorHint="?attr/textHintOnWhite"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="10dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSweepPrivateKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bch_wallet_button"
+                    android:text="@string/sweep"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

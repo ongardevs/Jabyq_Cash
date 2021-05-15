@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202020</color>
+    <color name="colorPrimaryDark">#181818</color>
+    <color name="colorAccentDark">#A1FE9E</color>
+    <color name="colorAccentDarker">#1CA560</color>
+    <color name="colorAccent">#22cc76</color>
+    <color name="colorStatusBarDownload">#A2A2A2</color>
+    <color name="colorAccentOld">#A1FE9E</color>
+    <color name="colorAccentTextbox">#57B253</color>
+    <color name="statusBarDark">#202020</color>
+    <color name="statusBarLight">#fff</color>
+    <color name="navBarDark">#252525</color>
+    <color name="navBarLight">#fff</color>
+    <color name="gray">#777777</color>
+    <color name="slpAccent">#3B7AF7</color>
+    <color name="slpAccentDark">#336BDD</color>
+</resources>

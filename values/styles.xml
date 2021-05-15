@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="CrescentCashLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="backgroundColor">#fff</item>
+        <item name="textColor">#000</item>
+        <item name="colorPrimary">#202020</item>
+        <item name="colorPrimaryDark">#181818</item>
+        <item name="colorAccentDark">#2FEF8F</item>
+        <item name="colorAccentDarker">#24A320</item>
+        <item name="colorAccent">#22cc76</item>
+        <item name="colorAccentOld">#A1FE9E</item>
+        <item name="colorAccentTextbox">#299E63</item>
+        <item name="android:statusBarColor">#fff</item>
+        <item name="textColorOnGreen">#fff</item>
+        <item name="buttonColorOnGreen">#fff</item>
+        <item name="buttonTextOnWhite">#fff</item>
+        <item name="tabIconColor">#22cc76</item>
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#22cc76</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="bchButtonDarker">#008A44</item>
+        <item name="textboxOnWhite">#ccc</item>
+        <item name="textHintOnWhite">#808080</item>
+        <item name="crescentLogo">@drawable/crescentcash</item>
+        <item name="android:navigationBarColor">#fff</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+    <!-- Dark base activity theme -->
+    <style name="CrescentCashDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="backgroundColor">#252525</item>
+        <item name="textColor">#fff</item>
+        <item name="colorPrimary">#202020</item>
+        <item name="colorPrimaryDark">#F2F2F3</item>
+        <item name="colorAccentDark">#656565</item>
+        <item name="colorAccentDarker">#fff</item>
+        <item name="colorAccent">#303030</item>
+        <item name="colorAccentOld">#fff</item>
+        <item name="colorAccentTextbox">#404040</item>
+        <item name="android:statusBarColor">#202020</item>
+        <item name="textColorOnGreen">#fff</item>
+        <item name="buttonColorOnGreen">#22cc76</item>
+        <item name="buttonTextOnWhite">#252525</item>
+        <item name="tabIconColor">#fff</item>
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#22cc76</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="textboxOnWhite">#404040</item>
+        <item name="textHintOnWhite">#808080</item>
+        <item name="crescentLogo">@drawable/crescentcash_darkmode</item>
+        <item name="android:navigationBarColor">#252525</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="AlertDialogDark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">#252525</item>
+        <item name="android:colorAccent">#ffffff</item>
+    </style>
+
+    <style name="AlertDialogLight" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#ffffff</item>
+        <item name="android:colorAccent">#000</item>
+    </style>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/receiveWindowSLP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/backgroundColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleLabel4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/receive"
+                android:textColor="?attr/textColor"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#353535"
+                android:minHeight="10dp" />
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srlContent_AM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:isScrollContainer="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bch_wallet_button"
+                        android:backgroundTint="?attr/backgroundColor"
+                        android:elevation="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/slpQR"
+                            android:layout_width="290dp"
+                            android:layout_height="290dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/slpAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="20dp"
+                            android:ellipsize="middle"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="address"
+                            android:textColor="?attr/textColor"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/toggleAddr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="?attr/backgroundColor"
+                            android:minWidth="30dp"
+                            android:minHeight="30dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/ic_baseline_swap_horiz_24px"
+                            android:tint="?attr/textColor" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</FrameLayout>

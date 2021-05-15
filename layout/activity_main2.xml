@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_download_peers"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/newuser"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/new_wallet"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/restore_wallet"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/jabyq_cash" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" />
+
+        <ImageButton
+            android:id="@+id/openKeys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:tint="?attr/textColor"
+            app:srcCompat="@drawable/settings"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="15dp"
+                        android:textColor="#000"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="20dp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/wallet_top_half"
+                        android:backgroundTint="@color/colorAccent"
+                        android:elevation="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="bottom"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="20dp"
+                            android:text="@string/bitcoin_cash"
+                            android:textColor="@color/white"
+                            android:textSize="34sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="34sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="bottom"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/loading"
+                            android:textColor="@color/white"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fiatBalTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/loading"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/syncPct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:minHeight="10dp"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/syncing"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/wallet_bottom_half"
+                        android:backgroundTint="@color/colorAccentDarker"
+                        android:elevation="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="40dp">
+
+                        <ImageButton
+                            android:id="@+id/viewBCHBtn"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:background="@null"
+                            android:elevation="0dp"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/history" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/receiveFabHome"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:background="@null"
+                            android:elevation="0dp"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/receive" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/sendFabHome"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:background="@null"
+                            android:elevation="0dp"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/send" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/wallet_top_half"
+                        android:backgroundTint="@color/slpAccent"
+                        android:elevation="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="bottom"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="20dp"
+                            android:text="@string/simple_ledger"
+                            android:textColor="@color/white"
+                            android:textSize="34sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="34sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/balanceSlp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="bottom"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/loading"
+                            android:textColor="@color/white"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fiatBalTxtSlp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/loading"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/syncSlp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/syncing"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/wallet_bottom_half"
+                        android:backgroundTint="@color/slpAccentDark"
+                        android:elevation="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="40dp">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/viewSLPBtn"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:background="@null"
+                            android:elevation="0dp"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/logo_slp_transparent" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4" />
+
+                        <ImageButton
+                            android:id="@+id/receiveSlpHome"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:background="@null"
+                            android:elevation="0dp"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/receive" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
